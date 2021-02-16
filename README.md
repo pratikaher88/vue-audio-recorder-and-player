@@ -2,7 +2,7 @@
 
 A simple Audio recorder and player to record audio content.
 
-![](https://raw.githubusercontent.com/pratiaher88/vue-audio-recorder-and-player/master/screenshot.png)
+![](https://raw.githubusercontent.com/pratikaher88/vue-audio-recorder-and-player/blob/master/screenshot.png)
 
 ## Installation
 
