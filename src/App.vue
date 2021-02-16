@@ -6,12 +6,12 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AudioRecorder from './components/AudioRecorder.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    AudioRecorder
   }
 }
 </script>
