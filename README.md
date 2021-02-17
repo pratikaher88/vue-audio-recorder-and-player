@@ -12,6 +12,8 @@ npm i vue-audio-recorder-and-player --save
 
 ### Usage
 
+Below is an example of how to handle recording result
+
 ```
 
 <template>
