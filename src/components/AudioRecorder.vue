@@ -86,7 +86,6 @@ export default {
             this.mediaRecorder.addEventListener('stop', this.onMediaRecorderStop);
 
             this.promisePlay = this.$refs.recorderaudio.play()
-            console.log(this.mediaRecorder)
 
             this.mediaRecorder.start()
         },
@@ -98,9 +97,7 @@ export default {
         },
         onMediaRecorderStop(e) { 
                 const blob = new Blob(this.chunks, { 'type': 'audio/mpeg; codecs=opus' })
-                console.log(blob)
                 const audioURL = window.URL.createObjectURL(blob)
-                console.log('Downloadable audio', audioURL);
                 this.$emit('recordingstop', blob)
                 this.playerSrc = audioURL
                 this.chunks = []
@@ -112,11 +109,8 @@ export default {
             if (!this.isRecording) return
             
             this.isRecording = false
-            // this.startRef.innerHTML = 'Record'
-            // this.$refs.recorderaudio.pause() Not sure about this - throw expection - play() request was interrupted by a call to pause()
             this.mediaRecorder.stop()
 
-            // Can remove this block
             if (this.promisePlay !== undefined) {
                 this.promisePlay.then(_ => {
                     this.$refs.recorderaudio.pause()
