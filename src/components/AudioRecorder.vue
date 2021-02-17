@@ -53,7 +53,6 @@ export default {
         startRecording() {
             if (this.isRecording) return
             this.isRecording = true
-            // this.startRef.innerHTML = 'Recording...'
             this.playerSrc = ''
             navigator.mediaDevices
                 .getUserMedia(this.constraints)
@@ -74,12 +73,6 @@ export default {
 
             this.recorderRefSrcObject = this.stream
             this.mediaRecorder = new MediaRecorder(this.stream)
-
-
-            // this.mediaRecorder.ondataavailable = function(event) {
-            //     console.log("chunks 2 ", event.data)
-            //         this.chunks.push(event.data);
-            //     }
 
             this.mediaRecorder.addEventListener('dataavailable', this.onMediaRecorderDataAvailable);
 
