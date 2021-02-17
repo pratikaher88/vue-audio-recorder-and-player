@@ -4,26 +4,10 @@
 
     <p v-if="error" class="grey--text">{{ error }}</p>
 	<audio id="recorder" ref="recorderaudio" :srcObject="recorderRefSrcObject" muted hidden></audio>
-    <!-- <div>
-        <button id="start" @click="startRecording">Record</button>
-        <button id="stop" @click="stopRecording">Stop Recording</button>
-    </div> -->
 
     <div class='parent grid-parent'>
 
         <div class="record_btn" @click="!isRecording ? startRecording() : stopRecording(); $event.target.classList.toggle('recording')"/>
-
-<!-- 
-        <div @click="!isRecording ? startRecording() : stopRecording()" class='child' style="margin-right:10px">
-
-            <div v-if="isRecording">
-              <i class="fa fa-microphone-slash fa-2x"/>
-            </div>
-            <div v-else>
-              <i class="fa fa-microphone fa-2x"/>
-            </div>
-
-        </div> -->
 
         <audio id="player" v-bind:src="playerSrc" controls controlsList="nodownload" class='child'></audio>
 

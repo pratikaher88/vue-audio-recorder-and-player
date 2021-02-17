@@ -39,6 +39,16 @@
       "no-unused-vars": "off"
     }
   },
+  "keywords": [
+    "promise",
+    "async",
+    "UnhandledPromiseRejectionWarning",
+    "PromiseRejectionHandledWarning"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pratikaher88/vue-audio-recorder-and-player"
+  },
   "browserslist": [
     "> 1%",
     "last 2 versions",
