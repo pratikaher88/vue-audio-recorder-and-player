@@ -10,6 +10,11 @@ A simple Audio recorder and player to record audio content.
 npm i vue-audio-recorder-and-player --save
 ```
 
+### Module
+```
+import vue-audio-recorder-and-player from 'vue-audio-recorder-and-player';
+```
+
 ### Usage
 
 Below is an example of how to handle recording result
