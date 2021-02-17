@@ -12,6 +12,8 @@ npm i vue-audio-recorder-and-player --save
 
 ### Usage
 
+```
+
 <template>
   <div>
     <vue-audio-recorder-and-player @recordingstop="recordingStopped" />
@@ -47,6 +49,8 @@ methods: {
  
 <style lang="css">
 </style> 
+
+```
 
 ### Return voice recording
 
