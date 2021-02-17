@@ -40,10 +40,9 @@
     }
   },
   "keywords": [
-    "promise",
-    "async",
-    "UnhandledPromiseRejectionWarning",
-    "PromiseRejectionHandledWarning"
+    "Vue",
+    "Audio Recorder",
+    "Javascript"
   ],
   "repository": {
     "type": "git",
