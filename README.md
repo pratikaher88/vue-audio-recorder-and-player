@@ -22,6 +22,8 @@ Below is an example of how to handle recording result
 </template>
  
 <script>
+
+import vue-audio-recorder-and-player from 'vue-audio-recorder-and-player';
 export default {
 },
 methods: {
