@@ -134,8 +134,9 @@ export default {
     border-radius: 50%;
     cursor: pointer;
     transition: 0.15s linear;
-    padding-left: 10px;
-    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 6px;
+    padding-top: 10px;
     margin-right: 20px;
 }
 
